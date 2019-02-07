@@ -1,0 +1,12 @@
+version: 0.1
+
+phases:
+  install:
+    commands:
+      - apt install zip
+  build:
+    commands:
+      - zip -r react-universally.zip ./
+artifacts:
+  files:
+    - './react-universally.zip'
